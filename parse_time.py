@@ -66,12 +66,15 @@ class PostParser:
 	def get_epoch_data(self):
 		"""
 		This method is the main interface. User is prompted to enter how many hours they would like to go back. The epoch range
-		is calculated, and any item within that range is used as new data.
+		is calculated, and any item within that range is used as new data. When entering hours, if 0 is entered, it will start
+		from the beginning of the submissons.json file. So use 0 for ALL data
 		"""
 		while True:
 			current_epoch_seconds = int(time.time())
 			try:
 				hours_to_go_back = int(input('Enter the number of WHOLE hours to go back: '))  # TODO: Add options for days/weeks as well. Add date ranges too
+				if hours_to_go_back == 0:
+					return self.data
 			except ValueError as e:
 				print(f'Error {e}: Please use only whole number values.')  # For some reason PRAW "created_utc" attribute had these all as floats. Fixed now
 				continue
