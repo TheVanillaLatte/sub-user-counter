@@ -19,7 +19,7 @@ class PostParser:
 		It will count back from the current epoch to however many hours you enterered. I was going to use the date item
 		already in each list in the dicts, but this is more precise. 
 
-		Please note that the "fd" argument is needs to be the data from the "get_epoch_data()" method. That method returns
+		Please note that the "fd" argument needs to be the data from the "get_epoch_data()" method. That method returns
 		a dictionary with all the posts from the time-frame you selected.
 
 		Also you can change the "as_file" argument either in the method definition above or at the bottom when calling the method.
