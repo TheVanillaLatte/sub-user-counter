@@ -32,7 +32,7 @@ This script relies on a `submissions.json` file located in the same directory. T
 Example `submissions.json` structure:
 ```json
 {
-  "post_id_1": ["title", "username_A", "subreddit", 1678886400, "..."],
-  "post_id_2": ["another title", "username_B", "subreddit", 1678890000, "..."],
-  "post_id_3": ["test", "username_A", "subreddit", 1678900000, "..." ]
+  "post_id_1": ["Date (Y/M/D)", "username_A", "test title", 1678886400],
+  "post_id_2": ["Date (Y/M/D)", "username_B", "title", 1678890000],
+  "post_id_3": ["Date (Y/M/D)", "username_A", "another title", 1678900000]
 }
